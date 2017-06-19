@@ -18,11 +18,18 @@ import { PbDomesticComponent } from './menus/tcp-pb/pb-domestic/pb-domestic.comp
 import { PbExportComponent } from './menus/tcp-pb/pb-export/pb-export.component';
 import { ThExportComponent } from './menus/tcp-th/th-export/th-export.component';
 import { ThDomesticComponent } from './menus/tcp-th/th-domestic/th-domestic.component';
+import { DDomesticComponent } from './menus/paperboard/duplex/d-domestic/d-domestic.component';
+import { DExportComponent } from './menus/paperboard/duplex/d-export/d-export.component';
+import { DBothComponent } from './menus/paperboard/duplex/d-both/d-both.component';
 
 const appRoutes: Routes = [
   {path: '', component: MenusComponent},
   {path: 'k-domestic', component: KDomesticComponent},
-  {path: 'k-export', component: KExportComponent}
+  {path: 'k-export', component: KExportComponent},
+  {path: 'p-duplex', component: DuplexComponent},
+  {path: 'p-duplex/domestic', component: DDomesticComponent},
+  {path: 'p-duplex/export', component: DExportComponent},
+  {path: 'p-duplex/both', component: DBothComponent}
 ];
 
 @NgModule({
@@ -42,7 +49,10 @@ const appRoutes: Routes = [
     PbDomesticComponent,
     PbExportComponent,
     ThExportComponent,
-    ThDomesticComponent
+    ThDomesticComponent,
+    DDomesticComponent,
+    DExportComponent,
+    DBothComponent
   ],
   imports: [
     BrowserModule,
