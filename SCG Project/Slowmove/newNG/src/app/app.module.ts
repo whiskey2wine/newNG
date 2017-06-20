@@ -29,7 +29,12 @@ const appRoutes: Routes = [
   {path: 'p-duplex', component: DuplexComponent},
   {path: 'p-duplex/domestic', component: DDomesticComponent},
   {path: 'p-duplex/export', component: DExportComponent},
-  {path: 'p-duplex/both', component: DBothComponent}
+  {path: 'p-duplex/both', component: DBothComponent},
+  {path: 'p-pbl', component: PblComponent},
+  {path: 'tcp-th/domestic', component: ThDomesticComponent},
+  {path: 'tcp-th/export', component: ThExportComponent},
+  {path: 'tcp-pb/domestic', component: PbDomesticComponent},
+  {path: 'tcp-pb/export', component: PbExportComponent}
 ];
 
 @NgModule({
